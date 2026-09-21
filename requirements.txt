@@ -1,0 +1,26 @@
+# DeskConvert Requirements
+
+# GUI Framework
+PyQt6==6.7.1
+
+# PDF Processing & Conversion
+PyMuPDF==1.24.9
+img2pdf==0.5.1
+pdf2image==1.17.0
+
+# Image Processing
+Pillow==10.4.0
+
+# OCR (Optical Character Recognition)
+pytesseract==0.3.13
+
+# ---------------------------------------------------------
+# Windows External Dependencies Note:
+# ---------------------------------------------------------
+# 1. pdf2image requires Poppler binaries on Windows:
+#    Download: https://github.com/oschwartz10612/poppler-windows/releases/
+#    You will need to extract it and add its 'bin' folder to PATH, or pass the poppler_path to pdf2image.
+#
+# 2. pytesseract requires Tesseract-OCR binaries on Windows:
+#    Download: https://github.com/UB-Mannheim/tesseract/wiki
+#    You must install it and optionally add it to PATH, or point pytesseract.pytesseract.tesseract_cmd to the exe.
