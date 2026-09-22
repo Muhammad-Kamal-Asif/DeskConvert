@@ -6,6 +6,22 @@
 
 ---
 
+## Download
+
+> **No Python required. No setup. Just install and run.**
+
+| Download | Details |
+| :--- | :--- |
+| **[DeskConvert_Setup.exe](../../releases/latest)** | Windows 10/11 — 64-bit |
+
+**The installer automatically handles:**
+- DeskConvert application
+- Tesseract OCR (for the OCR feature)
+- Poppler (for PDF processing)
+- Desktop shortcut and Start Menu entry
+
+---
+
 ## Overview
 
 **DeskConvert** is a privacy-first, fully offline desktop utility
@@ -113,31 +129,29 @@ with automatic safe-naming to guarantee zero overwrites.
 
 ## Installation
 
-### 1. Clone the Repository
+### Option A — Windows Installer (Recommended)
 
-```bash
-git clone https://github.com/your-username/deskconvert.git
-cd deskconvert
-```
+Download `DeskConvert_Setup.exe` from the 
+[Releases](../../releases/latest) page and run it.
+No Python, no dependencies, no configuration required.
 
-### 2. Create and Activate Virtual Environment
+### Option B — Run from Source (Developers)
 
-```powershell
-python -m venv .venv
-.venv\Scripts\activate
-```
+**Prerequisites:**
+- Python 3.10+
+- Poppler for Windows — add `bin/` to PATH  
+  https://github.com/oschwartz10612/poppler-windows/releases
+- Tesseract OCR — add to PATH  
+  https://github.com/UB-Mannheim/tesseract/wiki
 
-### 3. Install Dependencies
+**Steps:**
 
-```bash
-pip install -r requirements.txt
-```
-
-### 4. Run
-
-```bash
-python main.py
-```
+    git clone https://github.com/muhammad-kamal-asif/deskconvert.git
+    cd deskconvert
+    python -m venv .venv
+    .venv\Scripts\activate
+    pip install -r requirements.txt
+    python main.py
 
 ---
 
@@ -148,8 +162,17 @@ python main.py
 
 ---
 
+## Releases
+
+| Version | Date | Notes |
+| :--- | :--- | :--- |
+| v1.0 | September 2026 | Initial public release |
+
+---
+
 ## Author
 
-- **Developer**: Muhammad Kamal  
-- **Project Type**: Personal utility tool (portfolio project)  
+- **Developer**: Muhammad Kamal
+- **GitHub**: [muhammad-kamal-asif](https://github.com/muhammad-kamal-asif)
+- **Project Type**: Personal utility tool (portfolio project)
 - **License**: MIT
