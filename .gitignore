@@ -1,0 +1,41 @@
+# PyInstaller build output
+dist/
+build/
+*.spec.bak
+
+# Installer assets and output
+installer_assets/
+installer_output/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# App cache (should never be committed)
+.app_cache/
+
+# Logs
+*.log
+logs/
+
+# Local settings override
+local_settings.py
